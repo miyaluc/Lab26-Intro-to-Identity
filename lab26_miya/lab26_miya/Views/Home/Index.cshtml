@@ -1,0 +1,17 @@
+﻿<h1>This is a home view</h1>
+
+@*@model List<lab26_miya.Models.CPS>
+
+    @{
+        Layout = "null";
+        }
+
+@foreach(var item in Model)
+{
+    if (item.HasCompassion)
+    {
+        <h1>@item.YearsInService</h1>
+        <p>@item.Zodiac</p>
+
+    }
+ }*@
